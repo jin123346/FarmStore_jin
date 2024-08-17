@@ -2,7 +2,7 @@
 /* reset */
 *{margin: 0; padding:0; font-family: "Inter", sans-serif; font-size: 12px; font-weight: 400;}
 html{color:#111; position:relative;}
-html, body{height:100%; overflow:hidden;}
+html, body{height:100%; overflow-y: scroll;}
 body{font-size:12px; line-height:18px; font-family: 'Noto Sans KR', sans-serif;}
 a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img {margin: 0; padding: 0;}
 a{color:#111; text-decoration: none;}
@@ -149,19 +149,20 @@ main > .sub_bg {
     box-sizing: border-box;
     margin: 0 auto;
     z-index: 1;
+
 }
-main > .sub_bg img{
+main > .sub_bg {
     box-sizing: border-box;
     background-attachment: fixed;
     position: relative
 
 }
-main .intro{
+main .croptalk{
     position: absolute;
     z-index: 2;    
     background-attachment: fixed;
     left: 10px;
-    bottom: 47px;
+    bottom: 10px;
     box-sizing: border-box;
 }
 
@@ -227,28 +228,30 @@ aside > article{
     height: 29px;
 }
 .aside_container .greeting:hover{
-    
-    content: url(../images/sub_cate1_lnb1_ov.png);
+    content: url(../images/sub_cate3_lnb1_ov.png);
     z-index: 2;
     background-position: top;
 }
 
 
-.aside_container .dirction:hover{
-    
-    content: url(../images/sub_cate1_lnb2_ov.png);
+.aside_container a:nth-of-type(2):hover{
+    content: url(../images/sub_cate3_lnb2_ov.png);
     z-index: 2;
     background-position: top;
-    content-visibility: visible;
+}
+.aside_container a:nth-of-type(3):hover{
+    content: url(../images/sub_cate3_lnb3_ov.png);
+    z-index: 2;
+    background-position: top;
 }
 
 /* article */
 #article{
     box-sizing: border-box;
-    width: 780px;
+    width: 762px;
     height: 615px;
     margin-top: 14px;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 
 #article > div:nth-child(1){
@@ -257,7 +260,9 @@ aside > article{
 }
 
 .a_top{
-    height: 50px;
+    height: 72px;
+    line-height: 72px;
+    justify-content: flex-end;
     display: inline-flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -275,9 +280,11 @@ aside > article{
     top: 25px;
 }
 .a_top_tit{
-  
+    justify-content: flex-end;
     font-size: 25px;
     line-height: 50px;
+    color: #212121;
+    margin-bottom: 2px;
 } 
 
 .a_top .sub_utill{
@@ -293,6 +300,7 @@ aside > article{
     align-self: flex-start;
     justify-content: end;
     margin-left: 27px;
+    bottom: -37px;
 }
 
 .a_top .sub_utill{
@@ -316,6 +324,11 @@ aside > article{
 .sub_utill li:after {
     content: ">";
     margin-left: 5px;
+}
+
+.sub_utill li:last-child{
+    font-weight: bold;
+    color: #99ba24;
 }
 
 .sub_utill li:last-child:after {
@@ -351,15 +364,19 @@ footer{
     width: 100%;
     height: auto;
     margin-top: 20;
+}
 
+footer .ftlogo {
+   float: left;
+   margin-right: 70px;
 }
 
 .footerIn{
     width: 980px;
     height: 130px;
     margin: 0 auto;
-    font: 10.88px;
-    line-height: 13.16px;
+    background: url(../images/footer_top_line.png) no-repeat;
+    background-position: top;
 }
 
 .footerIn *{
@@ -368,11 +385,19 @@ footer{
 
 }
 
+.companyft {
+    display: block;
+    padding-top: 27px;
+}
+
 .ceoft{
    display: block;
-   font: 10.88px;
-   line-height: 13.16px;
 
+}
+
+.Copy{
+    display: block;
+    padding-top: 0px;
 }
 
 .companyft li::after{
@@ -396,11 +421,9 @@ footer{
 
 /* copyright */
 .Copy {
-    text-align: center; /* Center align the copyright text */
-    padding-top: 20px; /* Padding for the top */
-    font: 10.88px;
-    line-height: 13.16px; 
+    text-align: justify;
+    padding-left: 243px; 
+    font-size: 12px; /* Font size */
+    color: #777; /* Text color */
     font-weight: bold;
-    background: #888888;
-
 }
