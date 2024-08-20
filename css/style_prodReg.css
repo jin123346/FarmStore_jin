@@ -211,7 +211,7 @@ main .section{
     position: absolute;
 }
 
-/* table */
+/* product register table */
 
 .reg_table{
     margin-bottom: 12px;
@@ -277,21 +277,44 @@ main .section{
 
 
 /* label */
-label {
-    display: inline-flexbox;           /* Ensure the label and input are on the same line */
-    align-items: center;            /* Align items vertically centered */
+
+
+
+.checklb {
+    all: unset;
+    width: 80px;
+    height: 20px;
+    box-sizing: border-box;
+    /* padding: 3px 8px; */
+    font-size: 10.44PX;
+    line-height: 20px;
+    text-align: center;
+    background-color: #EFEFEF;
+    background-position: bottom;
+    border-radius: 2.5px;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #767676;
+    }
+    input.file1 {
+        display: none;
+        }
+  
+    /* display: inline-flexbox;         
+    align-items: center;           
     text-align: left;
-    width: auto;                    /* Allow the label to adjust its width automatically */
+    width: auto;                 
     font-weight: 400;
     font-size: 10.42px;
-    gap: 0px;                       /* No gap between input and text */
+    gap: 0px;                       
     vertical-align: middle;
     white-space: nowrap;
-    margin-right: 18px;
-}
+    margin-right: 18px; */
+
 
 /* Adjust the '원' symbol */
-label::after {
+.checklb::after {
     margin-left: 2px;                /* Slight space between the number and the '원' symbol */
     font-size: 12px;                 /* Match the font-size */
     vertical-align: middle;          /* Ensure '원' is vertically centered */
@@ -316,7 +339,52 @@ input[type="checkbox"] {
 
 
 /* fileupload */
-.file-upload-container {
+
+.file_input{
+    width: 80px;
+    height: 20px;
+    background: #EFEFEF;
+    border: 1px solid #767676;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.btn_upload{
+    width: 64px;
+    height: 14px;
+ 
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    
+  }
+  
+  #file {
+    display: none;
+  }
+  .file_upload_container > span {
+    margin-bottom: 4px;
+  }
+
+  .file_input{
+    margin-bottom: 4px;
+    
+  }
+
+  .tr_file{
+    height: 166px;
+  }
+
+  .file_input .ResultFile{
+    box-sizing: border-box;
+    position: absolute;
+    float: right;
+    right: 0px;
+  }
+
+/* .file_upload_container {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -324,25 +392,12 @@ input[type="checkbox"] {
     font-size: 14px;
 }
 
-.file-upload-container label {
+.file_upload_container .checklb {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.custom-file-input {
-    position: relative;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #e7e7e7;
-    cursor: pointer;
-    font-size: 14px;
-    color: #000;
-    width: 80px;
-    height: 20px;
-}
-
-.custom-file-input input[type="file"] {
+.file_input input[type="file"] {
     position: absolute;
     left: 0;
     top: 0;
@@ -357,7 +412,8 @@ input[type="checkbox"] {
 .custom-file-input p{
     display: inline-flex;
     flex-direction: row;
-}
+} */
+
 
 
 

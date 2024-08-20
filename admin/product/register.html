@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/FarmStore_jin/css/style_prodReg.css">
+    <link rel="stylesheet" href="/css/style_prodReg.css">
     <title>PRODUCT::Register</title>
 </head>
 <body>
@@ -95,10 +95,10 @@
                                     <tr>
                                         <th>배송비</th>
                                         <td>
-                                            <label for="check1"><input type="checkbox" naem="deliverfee" id="dfee">2,000원</label>
-                                            <label for="check2"><input type="checkbox" naem="deliverfee" id="dfee">3,000원</label>
-                                            <label for="check3"><input type="checkbox" naem="deliverfee" id="dfee">5,000원</label>
-                                            <label for="check4"><input type="checkbox" naem="deliverfee" id="dfee">무료</label>
+                                            <label for="check1" class="checklb"><input type="checkbox" naem="deliverfee" id="dfee">2,000원</label>
+                                            <label for="check2" class="checklb"><input type="checkbox" naem="deliverfee" id="dfee">3,000원</label>
+                                            <label for="check3" class="checklb"><input type="checkbox" naem="deliverfee" id="dfee">5,000원</label>
+                                            <label for="check4" class="checklb"><input type="checkbox" naem="deliverfee" id="dfee">무료</label>
                                         </td>
                                     </tr>
                                     <tr>
@@ -109,29 +109,38 @@
                                         <th>상품이미지</th>
                                         <td><input type="text" name="prodImg" ></td>
                                     </tr>
-                                    <tr>
+                                    <tr class="tr_file">
                                         <th>기타</th>
-                                        <td>
-                                            <div class="file-upload-container">
-                                                <label for="file1">상품목록 이미지(약 120 × 120)</label>
-                                                <div class="custom-file-input">
-                                                    <input type="file" id="file1">
-                                                    <span>Choose File</span>
-                                                    <p>No file chosen</p>
+                                        <td>   
+                                            <div class="file_upload_container">
+                                                <span>상품목록 이미지(약 120 × 120)</span>
+                                                <div class="file_input">
+                                                   <label for="file1">
+                                                    <div class="btn_upload">Choose file</div>
+                                                   </label>
+                                                   <input type="file" name="file1" id="file">
+                                                   <div class="ResultFile 1">No file chosen</div>
                                                 </div>
+                                                <span>기본정보 이미지(약 240 × 240)</span>
+                                                <div class="file_input">
+                                                    <label for="file2">
+                                                    <div class="btn_upload">Choose file</div>
+                                                    </label>
+                                                    <input type="file" name="file3" id="file">
+                                                    <div class="ResultFile 2">No file chosen</div>
+                                                </div>
+                                                <span>상품설명 이미지(약 750 × Auto)</span>
+                                                <div class="file_input">
+                                                    <label for="file3">
+                                                    <div class="btn_upload">Choose file</div>
+                                                    </label>
+                                                    <input type="file" name="file3" id="file">
+                                                    <div class="ResultFile 3">No file chosen</div>
+                                                </div>
+                                              
                                                 
-                                                <label for="file2">기본정보 이미지(약 240 × 240)</label>
-                                                <div class="custom-file-input"> <span>Choose File</span>
-                                                    <input type="file" id="file2">
-                                                    
-                                                </div>
-                                                
-                                                <label for="file3">상품설명 이미지(약 750 × Auto)</label>
-                                                <div class="custom-file-input">
-                                                    <input type="file" id="file3">
-                                                    <span>Choose File</span>
-                                                </div>
-                                            </div>
+                                             
+                                            </div><!--file-upload-container end-->
                                         </td>
                                     </tr>
        
