@@ -227,9 +227,8 @@ aside > article{
     width: 175px;
     height: 29px;
 }
-.aside_container .greeting:hover img{
-    content: none;
-    src: url(../images/sub_cate3_lnb1_ov.png);
+.aside_container .greeting:hover{
+    content: url(../images/sub_cate3_lnb1_ov.png);
     z-index: 2;
     background-position: top;
 }
