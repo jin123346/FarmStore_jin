@@ -171,6 +171,7 @@ main .section{
     width: 100%;
     height: 45px;
     text-align: left;
+    line-height: 45px;
 }
 
 .main_top span{
@@ -180,6 +181,13 @@ main .section{
     color: #3F3F3F;
     margin-top: 12px;
 }
+
+.main_top >  h2{
+    font-size: 17px;
+    font-weight: 700;
+    
+}
+
 
 /* tbname */
 
@@ -289,13 +297,11 @@ main .section{
     font-size: 10.44PX;
     line-height: 20px;
     text-align: center;
-    background-color: #EFEFEF;
     background-position: bottom;
     border-radius: 2.5px;
     color: black;
     font-weight: 400;
     cursor: pointer;
-    border: 1px solid #767676;
     }
     input.file1 {
         display: none;
@@ -339,86 +345,80 @@ input[type="checkbox"] {
 
 
 /* fileupload */
+.file_upload_tr {
+    height:166px ;
+}
 
-.file_input{
+.file_group {
+    margin-bottom: 4px; /* Space between each file input */
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.file_upload_form label {
+    font-size: 14px; /* Font size for labels */
+    margin-bottom: 4px; /* Space between label and input */
+    color: #333; /* Text color for the label */
+    margin-left: 12px;
+    text-indent: 0px;
+}
+
+/* Style the custom file input */
+.cf_input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.ci{
+   
+    background-color:#EFEFEF;
     width: 80px;
     height: 20px;
-    background: #EFEFEF;
-    border: 1px solid #767676;
-    border-radius: 2px;
-    box-sizing: border-box;
+    border: 1px solid black;
 }
-.btn_upload{
-    width: 64px;
-    height: 14px;
- 
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 11px;
-    
-  }
-  
-  #file {
-    display: none;
-  }
-  .file_upload_container > span {
-    margin-bottom: 4px;
-  }
-
-  .file_input{
-    margin-bottom: 4px;
-    
-  }
-
-  .tr_file{
-    height: 166px;
-  }
-
-  .file_input .ResultFile{
-    box-sizing: border-box;
-    position: absolute;
-    float: right;
-    right: 0px;
-  }
-
-/* .file_upload_container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-.file_upload_container .checklb {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.file_input input[type="file"] {
+.cf_input input[type="file"] {
     position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
+    
+    
+}
+
+.cf_input span {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 64px;
+    height: 14px;
     cursor: pointer;
+    border: 1px solid #767676;
+    background-color:#EFEFEF;
+    width: 80px;
+    height: 20px;
+   
+    border-radius: 2.5px;
+    color:  #000000;
+    font-size: 12px;
+    text-indent: 0px;
+    margin-left: 12px;
+    padding-left: 8px;
+    line-height: 16px;
+
+    font-weight: 400;
 }
 
-.custom-file-input span {
-    pointer-events: none;
-}
-
-.custom-file-input p{
-    display: inline-flex;
+.cf_input > p{
+    left: 96px;
+    position: absolute;
+    display: flex;
     flex-direction: row;
-} */
+    justify-content: space-between;
+    align-items: center;
 
-
-
-
-
-
+}
 
 
 
@@ -444,7 +444,34 @@ input[type="checkbox"] {
     align-self: self-start;
 }
 
-.btn_group > .insertbtn {
+/* register product */
+.reg_table .btn_group_register{
+    width: 784px;
+    height: 51px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    align-items: center;
+}
+
+.btn_group_register > .cancelbtn{
+    box-sizing: border-box;
+    float: right;
+    justify-content: none;
+    width: 50px;
+    height: 28px;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    line-height: 28px;
+    
+    margin-right: 3px;
+    align-items: center;
+}
+
+
+.btn_group_register > .insertbtn {
     width: 74px;
     height: 31px;
     box-sizing: border-box;
@@ -452,7 +479,9 @@ input[type="checkbox"] {
     border: 1px solid #cccccc;
     text-align: center;
     line-height: 31px;
-    margin-top: 10px;
+  
+    background: #EFEFEF;
+    
 }
 
 

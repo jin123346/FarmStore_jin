@@ -109,45 +109,42 @@
                                         <th>상품이미지</th>
                                         <td><input type="text" name="prodImg" ></td>
                                     </tr>
-                                    <tr class="tr_file">
+                                    <tr class="file_upload_tr">
                                         <th>기타</th>
                                         <td>   
-                                            <div class="file_upload_container">
-                                                <span>상품목록 이미지(약 120 × 120)</span>
-                                                <div class="file_input">
-                                                   <label for="file1">
-                                                    <div class="btn_upload">Choose file</div>
-                                                   </label>
-                                                   <input type="file" name="file1" id="file">
-                                                   <div class="ResultFile 1">No file chosen</div>
+                                            <div class="file_upload_form">
+                                                <div class="file_group">
+                                                    <label for="product_list_image">상품목록 이미지(약 120 × 120)</label>
+                                                    <div class="cf_input">
+                                                        <input type="file" class="ci" id="product_list_image" name="product_list_image">
+                                                        <span>Choose File</span><p>No file chosen</p>
+                                                    </div>
                                                 </div>
-                                                <span>기본정보 이미지(약 240 × 240)</span>
-                                                <div class="file_input">
-                                                    <label for="file2">
-                                                    <div class="btn_upload">Choose file</div>
-                                                    </label>
-                                                    <input type="file" name="file3" id="file">
-                                                    <div class="ResultFile 2">No file chosen</div>
+                                        
+                                                <div class="file_group">
+                                                    <label for="basic_info_image">기본정보 이미지(약 240 × 240)</label>
+                                                    <div class="cf_input">
+                                                        <input type="file" id="basic_info_image" name="basic_info_image">
+                                                        <span>Choose File</span><p>No file chosen</p>
+                                                    </div>
                                                 </div>
-                                                <span>상품설명 이미지(약 750 × Auto)</span>
-                                                <div class="file_input">
-                                                    <label for="file3">
-                                                    <div class="btn_upload">Choose file</div>
-                                                    </label>
-                                                    <input type="file" name="file3" id="file">
-                                                    <div class="ResultFile 3">No file chosen</div>
+                                        
+                                                <div class="file_group">
+                                                    <label for="product_description_image">상품설명 이미지(약 750 × Auto)</label>
+                                                    <div class="cf_input">
+                                                        <input type="file" id="product_description_image" name="product_description_image">
+                                                        <span>Choose File</span><p>No file chosen</p>
+                                                    </div>
                                                 </div>
-                                              
-                                                
-                                             
-                                            </div><!--file-upload-container end-->
+                                            </div>
                                         </td>
                                     </tr>
        
                                 </table>
-                                <div class="btn_group">
-                                        <a href="#"  class="deletebtn">선택삭제</a>
+                                <div class="btn_group_register">
+                                       
                                         <a href="#"  class="insertbtn">상품등록</a>
+                                        <a href="#"  class="cancelbtn">취소</a>
                                 </div><!--btn_group end-->
                                
                             </div><!--status-table end-->
